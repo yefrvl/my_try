@@ -17,18 +17,24 @@ six = []
 seven = [0, -135, 45]
 chisla = [null, one, two, three, four, five]
 for row in chisla:
+    if row == one or six:
+        turtle.penup()
+        turtle.left(-90)
+        turtle.forward(dlina)
+        turtle.left(90)
+        turtle.pendown()
 
     for elem in row:
+
         turtle.left(elem)
-        if elem%2 == 0 and (elem == -45 or elem == 45 or
-                            elem == 135 or elem == -135):
+        if (row == one and len(one)) or (row == two):
             turtle.forward(sqrt(dlina**2 + dlina**2))
         else:
             turtle.forward(dlina)
     x+=30
     turtle.right(90)
     turtle.penup()
-    turtle.goto(x, 0)
+    turtle.forward(30)
     turtle.pendown()
 
 
