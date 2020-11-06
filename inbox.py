@@ -5,7 +5,7 @@ x = 45
 y = 0
 turtle.shape('turtle')
 dlina = 30
-null = [0, 180, 90, 0, 90, 90, 0]
+zero = [0, 180, 90, 0, 90, 90, 0]
 one = [45, -135, 0, 180, 0]
 two = [0, -90, -45, 135]
 three = [0, -135, 135, -135]
@@ -15,7 +15,7 @@ six = [-90, 90, 90, 90, -135 ]
 seven = [0, -135, 45]
 eight = [0, -90, 0, -90, -90, -90, 180, -90, -90]
 nine = [0, -90, -90, -90, -90, -90, -45]
-chisla = [null, one, two, three, four, five, six, seven, eight, nine]
+chisla = [zero, one, two, three, four, five, six, seven, eight, nine]
 for row in chisla:
     if row == one or row == six:
         turtle.penup()
