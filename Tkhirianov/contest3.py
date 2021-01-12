@@ -4,7 +4,7 @@ inp_data = input()
 def input_data(inp_data):
     while inp_data != '#':
 
-        A.append(inp_data)
+        A.append(inp_data.split(' '))
         inp_data = input()
 
 
