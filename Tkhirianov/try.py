@@ -1,13 +1,19 @@
+from collections import Counter
 
-list_ = [[0, 2], [0, 3], [0, 5], [1, 2], [1, 4], [1, 5], [2, 2], [2, 5], [2, 1]]
+a = '''
+When I was One
+I had just begun
+When I was Two
+I was nearly new
+'''
 
-data = {}
+a1 = ['i', 'was', 'three', 'near']
 
-for student_id, student_value in list_:
-    data.setdefault(str(student_id), [])
-    data[str(student_id)].append(student_value)
+b = Counter(a.lower().split())
 
+c = {}
+for x in a1:
+    if x in b:
+        print(x)
 
-for student, values in data.items():
-    str_values = ','.join([str(x) for x in sorted(values, reverse=True)])
-    print(f'Студент №{student}: {str_values}')
+#print([x for x in a.lower().split()])
